@@ -1,0 +1,40 @@
+.ability {
+    min-height: 471px;
+    padding: 75px 0 80px 0;
+    background-color: #f6f6f6;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+    &__item {
+        display: block;
+        width: 238px;
+        text-align: center;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        .ability__header {
+            margin-top: 32px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .ability__subheader {
+            margin-top: 15px;
+            font-size: 13px;
+            font-weight: 700;
+            a {
+                color: $main-color;
+            }
+        }
+    }
+    @media (max-width: 576px) {
+        .ability__header {
+            font-size: 16px;
+        }
+        .ability__subheader {
+            font-size: 12px;
+        }
+    }
+}
